@@ -1,0 +1,22 @@
+# Yahoo 主域
+DOMAIN-SUFFIX,yahoo.com
+DOMAIN-SUFFIX,yahooapis.com
+DOMAIN-SUFFIX,yahoodns.net
+
+# 静态资源
+DOMAIN-SUFFIX,yimg.com
+DOMAIN-SUFFIX,yahoofs.com
+
+# 登录 / 授权 / 地区判断
+DOMAIN,consent.yahoo.com
+DOMAIN,guce.yahoo.com
+DOMAIN,api.login.yahoo.com
+
+# CDN（真实需要）
+DOMAIN-SUFFIX,akamaihd.net
+DOMAIN-SUFFIX,cloudfront.net
+
+# Tracking / 地区判断（Google）
+DOMAIN-SUFFIX,doubleclick.net
+DOMAIN-SUFFIX,googlesyndication.com
+DOMAIN-SUFFIX,googleads.g.doubleclick.net
