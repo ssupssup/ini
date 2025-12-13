@@ -1,0 +1,32 @@
+# 分流规则（PROXY 或 DIRECT）
+DOMAIN-SUFFIX,tktn.at
+DOMAIN-SUFFIX,tktn.be
+DOMAIN-SUFFIX,vm.talkatone.com
+DOMAIN-SUFFIX,tenor.com
+DOMAIN-SUFFIX,talkatone.com
+DOMAIN-SUFFIX,crashlytics.com
+DOMAIN-SUFFIX,mobilefuse.com
+DOMAIN-SUFFIX,crashlytics.com
+DOMAIN-SUFFIX,inmobi.com
+DOMAIN-SUFFIX,kochava.com
+DOMAIN-SUFFIX,cohere.com
+DOMAIN-SUFFIX,ip-api.com
+IP-CIDR,50.117.27.0/24
+IP-CIDR,69.46.75.0/24
+IP-CIDR,69.171.224.0/19
+IP-CIDR,205.164.56.0/24
+IP-CIDR,63.251.124.0/24
+
+HOST-KEYWORD,paypal
+DOMAIN-SUFFIX,paypal.com
+DOMAIN-SUFFIX,paypalobjects.com
+DOMAIN-SUFFIX,braintreegateway.com
+DOMAIN-SUFFIX,paypal.com
+
+# 其他相关 IP 范围根据节点调整
+
+# URL 重写（可选，去广告补充）
+^https?:\/\/alt-r\.my\.com\/mobile - reject-dict
+
+# MITM 主机名（可选，用于 HTTPS 拦截）
+hostname = %APPEND% alt-r.my.com, imgx.jampp.com
