@@ -1,0 +1,28 @@
+  - {name: HongKong 01, server: tap.mhlnf.cn, port: 48333, type: trojan, password: 021e52d1-40d0-4972-b40f-4993674571f2, sni: v1-dy.ixigua.com, skip-cert-verify: false, udp: true}
+  - {name: HongKong 02, server: tap.mhlnf.cn, port: 40439, type: trojan, password: 021e52d1-40d0-4972-b40f-4993674571f2, sni: v1-dy.ixigua.com, skip-cert-verify: false, udp: true}
+  - {name: HongKong 03, server: tap.mhlnf.cn, port: 48335, type: trojan, password: 021e52d1-40d0-4972-b40f-4993674571f2, sni: v1-dy.ixigua.com, skip-cert-verify: false, udp: true}
+  - {name: HongKong 04, server: tap.mhlnf.cn, port: 38557, type: trojan, password: 021e52d1-40d0-4972-b40f-4993674571f2, sni: v1-dy.ixigua.com, skip-cert-verify: false, udp: true}
+  - {name: Taiwan 01, server: tap.mhlnf.cn, port: 49503, type: trojan, password: 021e52d1-40d0-4972-b40f-4993674571f2, sni: v1-dy.ixigua.com, skip-cert-verify: false, udp: true}
+  - {name: Taiwan 02, server: tap.mhlnf.cn, port: 58785, type: trojan, password: 021e52d1-40d0-4972-b40f-4993674571f2, sni: v1-dy.ixigua.com, skip-cert-verify: false, udp: true}
+  - {name: Taiwan 03, server: tap.mhlnf.cn, port: 19731, type: trojan, password: 021e52d1-40d0-4972-b40f-4993674571f2, sni: v1-dy.ixigua.com, skip-cert-verify: false, udp: true}
+  - {name: Taiwan 04, server: tap.mhlnf.cn, port: 27008, type: trojan, password: 021e52d1-40d0-4972-b40f-4993674571f2, sni: v1-dy.ixigua.com, skip-cert-verify: false, udp: true}
+  - {name: Singapore 01, server: tap.mhlnf.cn, port: 45613, type: trojan, password: 021e52d1-40d0-4972-b40f-4993674571f2, sni: v1-dy.ixigua.com, skip-cert-verify: false, udp: true}
+  - {name: Singapore 02, server: tap.mhlnf.cn, port: 15455, type: trojan, password: 021e52d1-40d0-4972-b40f-4993674571f2, sni: v1-dy.ixigua.com, skip-cert-verify: false, udp: true}
+  - {name: Singapore 03, server: tap.mhlnf.cn, port: 37083, type: trojan, password: 021e52d1-40d0-4972-b40f-4993674571f2, sni: v1-dy.ixigua.com, skip-cert-verify: false, udp: true}
+  - {name: Singapore 04, server: tap.mhlnf.cn, port: 24911, type: trojan, password: 021e52d1-40d0-4972-b40f-4993674571f2, sni: v1-dy.ixigua.com, skip-cert-verify: false, udp: true}
+  - {name: Japanese 01, server: tap.mhlnf.cn, port: 41977, type: trojan, password: 021e52d1-40d0-4972-b40f-4993674571f2, sni: v1-dy.ixigua.com, skip-cert-verify: false, udp: true}
+  - {name: Japanese 02, server: tap.mhlnf.cn, port: 32484, type: trojan, password: 021e52d1-40d0-4972-b40f-4993674571f2, sni: v1-dy.ixigua.com, skip-cert-verify: false, udp: true}
+  - {name: Japanese 03, server: tap.mhlnf.cn, port: 11247, type: trojan, password: 021e52d1-40d0-4972-b40f-4993674571f2, sni: v1-dy.ixigua.com, skip-cert-verify: false, udp: true}
+  - {name: Japanese 04, server: tap.mhlnf.cn, port: 10452, type: trojan, password: 021e52d1-40d0-4972-b40f-4993674571f2, sni: v1-dy.ixigua.com, skip-cert-verify: false, udp: true}
+  - {name: USA 01, server: tap.mhlnf.cn, port: 27306, type: trojan, password: 021e52d1-40d0-4972-b40f-4993674571f2, sni: v1-dy.ixigua.com, skip-cert-verify: false, udp: true}
+  - {name: USA 02, server: tap.mhlnf.cn, port: 49591, type: trojan, password: 021e52d1-40d0-4972-b40f-4993674571f2, sni: v1-dy.ixigua.com, skip-cert-verify: false, udp: true}
+  - {name: USA 03, server: tap.mhlnf.cn, port: 59617, type: trojan, password: 021e52d1-40d0-4972-b40f-4993674571f2, sni: v1-dy.ixigua.com, skip-cert-verify: false, udp: true}
+  - {name: USA 04, server: tap.mhlnf.cn, port: 22639, type: trojan, password: 021e52d1-40d0-4972-b40f-4993674571f2, sni: v1-dy.ixigua.com, skip-cert-verify: false, udp: true}
+  - {name: USA Native Residential 🏠, server: tap.mhlnf.cn, port: 20541, type: trojan, password: 021e52d1-40d0-4972-b40f-4993674571f2, sni: v1-dy.ixigua.com, skip-cert-verify: false, udp: true}
+  - {name: Korea 01, server: tap.mhlnf.cn, port: 44991, type: trojan, password: 021e52d1-40d0-4972-b40f-4993674571f2, sni: v1-dy.ixigua.com, skip-cert-verify: false, udp: true}
+  - {name: Turkey, server: tap.mhlnf.cn, port: 10292, type: trojan, password: 021e52d1-40d0-4972-b40f-4993674571f2, sni: v1-dy.ixigua.com, skip-cert-verify: false, udp: true}
+  - {name: Germany, server: tap.mhlnf.cn, port: 56794, type: trojan, password: 021e52d1-40d0-4972-b40f-4993674571f2, sni: v1-dy.ixigua.com, skip-cert-verify: false, udp: true}
+  - {name: Canada Native, server: tap.mhlnf.cn, port: 12838, type: trojan, password: 021e52d1-40d0-4972-b40f-4993674571f2, sni: v1-dy.ixigua.com, skip-cert-verify: false, udp: true}
+  - {name: UK Native Residential 🏠, server: tap.mhlnf.cn, port: 37406, type: trojan, password: 021e52d1-40d0-4972-b40f-4993674571f2, sni: v1-dy.ixigua.com, skip-cert-verify: false, udp: true}
+  - {name: Australia, server: tap.mhlnf.cn, port: 41727, type: trojan, password: 021e52d1-40d0-4972-b40f-4993674571f2, sni: v1-dy.ixigua.com, skip-cert-verify: false, udp: true}
+  - {name: Vietnam Native, server: tap.mhlnf.cn, port: 13257, type: trojan, password: 021e52d1-40d0-4972-b40f-4993674571f2, sni: v1-dy.ixigua.com, skip-cert-verify: false, udp: true}
