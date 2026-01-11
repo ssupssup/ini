@@ -1,4 +1,6 @@
 #name: 'AI Studio'
+#如果加入，直接打不开ai studio
+
 
   - DOMAIN,aistudio.google.com
   - DOMAIN,ai.google.dev
