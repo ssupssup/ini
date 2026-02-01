@@ -1,0 +1,17 @@
+# === Gemini 核心 ===
+DOMAIN-SUFFIX,gemini.google.com,PROXY
+DOMAIN-SUFFIX,generativelanguage.googleapis.com,PROXY
+DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com,PROXY
+DOMAIN-SUFFIX,notifications-pa.googleapis.com,PROXY
+
+# === Google 登录 & 会话 ===
+DOMAIN-SUFFIX,oauth2.googleapis.com,PROXY
+DOMAIN-SUFFIX,oauthaccountmanager.googleapis.com,PROXY
+DOMAIN,content-autofill.googleapis.com,PROXY
+DOMAIN-SUFFIX,accounts.google.com,PROXY
+
+# === Gemini App 依赖 ===
+DOMAIN-SUFFIX,geller-pa.googleapis.com,PROXY
+DOMAIN-SUFFIX,alkalimakersuite-pa.clients6.google.com,PROXY
+DOMAIN-SUFFIX,gstatic.com,PROXY
+DOMAIN-SUFFIX,gvt2.com,PROXY
