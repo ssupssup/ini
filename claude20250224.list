@@ -1,0 +1,13 @@
+# === CLAUDE ===
+
+
+# DOMAIN: 1
+# DOMAIN-SUFFIX: 5
+# TOTAL: 6
+
+DOMAIN,servd-anthropic-website.b-cdn.net
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-SUFFIX,claudemcpclient.com
