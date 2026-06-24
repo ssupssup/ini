@@ -30,48 +30,7 @@ ALLOWED_SUBDOMAINS = [
     "guzzoni.apple.com", "smoot.apple.com", "gspe1-ssl.ls.apple.com"
 ]
 
-# User's manually verified custom rules (Highest priority, stripped of actions)
-CUSTOM_RULES = """# === User Custom AI & Apple Intelligence Rules ===
-# > Apple Intelligence / Apple AI
-# 核心Siri与听写服务
-DOMAIN,guzzoni.apple.com
-DOMAIN,smoot.apple.com
 
-# Apple Relay & Private Relay 相关
-# 新增：匹配任何包含 "apple-relay" 的域名 (如 mask.apple-relay.apple.com 等)
-DOMAIN-KEYWORD,apple-relay
-DOMAIN,apple-relay.apple.com
-DOMAIN,apple-relay.cloudflare.com
-DOMAIN,apple-relay.fastly-edge.com
-
-# 位置服务 (注意：代理此域名可能会改变系统判定的地理位置)
-DOMAIN,gspe1-ssl.ls.apple.com
-# 连接性检查
-DOMAIN,cp4.cloudflare.com
-
-# > Yahoo (Keyword)
-DOMAIN-KEYWORD,yahoo.com
-
-# > Claude (Anthropic) 依赖 of 第三方服务/分析统计
-DOMAIN,cdn.usefathom.com
-DOMAIN,segment.io
-DOMAIN,segment.com
-DOMAIN,statsig.com
-DOMAIN,statsigapi.net
-DOMAIN,o532071.ingest.sentry.io
-
-# > Grok (xAI)
-DOMAIN-SUFFIX,grok.com
-DOMAIN-SUFFIX,x.ai
-
-# > Poe
-DOMAIN-SUFFIX,poe.com
-
-# > Manus
-DOMAIN-SUFFIX,manus.im
-DOMAIN-SUFFIX,manus.app
-DOMAIN-SUFFIX,manus-api.im
-"""
 
 def download_url(url):
     print(f"Downloading: {url}")
@@ -132,6 +91,7 @@ def parse_clash_yaml(yaml_content):
     return rules
 
 def main():
+    script_dir = os.path.dirname(os.path.abspath(__file__))
     compiled_rules = []
     
     # Process BM7 sources
@@ -151,16 +111,23 @@ def main():
     seen = set()
     
     # 1. Add user custom rules first
-    for line in CUSTOM_RULES.splitlines():
-        line_stripped = line.strip()
-        if line_stripped:
-            if not line_stripped.startswith("#"):
-                norm = line_stripped.replace(" ", "").lower()
-                if norm not in seen:
-                    seen.add(norm)
+    custom_rules_path = os.path.join(script_dir, "custom_static_ai.list")
+    if os.path.exists(custom_rules_path):
+        print(f"Reading local static custom rules: {custom_rules_path}")
+        with open(custom_rules_path, "r", encoding="utf-8") as f:
+            custom_content = f.read()
+        for line in custom_content.splitlines():
+            line_stripped = line.strip()
+            if line_stripped:
+                if not line_stripped.startswith("#"):
+                    norm = line_stripped.replace(" ", "").lower()
+                    if norm not in seen:
+                        seen.add(norm)
+                        final_rules.append(line_stripped)
+                else:
                     final_rules.append(line_stripped)
-            else:
-                final_rules.append(line_stripped)
+    else:
+        print(f"Warning: {custom_rules_path} not found!")
                 
     # 2. Add compiled rules
     final_rules.append("\n# === Compiled AI & Subdomain Rules ===")
