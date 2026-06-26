@@ -140,7 +140,13 @@ def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     output_path = os.path.join(script_dir, "ai.list")
     
+    import datetime
+    utc_now = datetime.datetime.utcnow()
+    beijing_now = utc_now + datetime.timedelta(hours=8)
+    beijing_time_str = beijing_now.strftime('%Y-%m-%d %H:%M:%S')
+    
     with open(output_path, "w", encoding="utf-8") as f:
+        f.write(f"# 自动更新时间: {beijing_time_str}\n\n")
         for rule in final_rules:
             f.write(rule + "\n")
             

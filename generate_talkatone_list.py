@@ -144,8 +144,14 @@ def generate_proxy_list(script_dir):
         if rule not in user_seen:
             list_rules.append(rule)
             
+    import datetime
+    utc_now = datetime.datetime.utcnow()
+    beijing_now = utc_now + datetime.timedelta(hours=8)
+    beijing_time_str = beijing_now.strftime('%Y-%m-%d %H:%M:%S')
+
     output_path = os.path.join(script_dir, "talkatone_proxy.list")
     with open(output_path, "w", encoding="utf-8") as f:
+        f.write(f"# 自动更新时间: {beijing_time_str}\n\n")
         for rule in list_rules:
             f.write(rule + "\n")
             
@@ -235,8 +241,14 @@ def generate_adblock_list(script_dir):
                 added_count += 1
         print(f" - Parsed {len(parsed)} rules from {alliance}, added {added_count} clean rules.")
 
+    import datetime
+    utc_now = datetime.datetime.utcnow()
+    beijing_now = utc_now + datetime.timedelta(hours=8)
+    beijing_time_str = beijing_now.strftime('%Y-%m-%d %H:%M:%S')
+
     output_path = os.path.join(script_dir, "talkatone_adblock.list")
     with open(output_path, "w", encoding="utf-8") as f:
+        f.write(f"# 自动更新时间: {beijing_time_str}\n\n")
         f.write("# === Talkatone AdBlock Rules ===\n")
         for rule in adblock_rules:
             f.write(rule + "\n")
