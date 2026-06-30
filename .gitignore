@@ -1,4 +1,11 @@
-README.md
-CHANGELOG.md
+# 屏蔽所有 Markdown 说明文档（确保全站文档仅留存本地 MacBook）
+*.md
+
+# 屏蔽所有格式的压缩包（防止一切备份外泄）
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# 缓存过滤
 .DS_Store
-archive.zip
