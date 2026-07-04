@@ -1,0 +1,10 @@
+# NAME: custom_static_line
+# AUTHOR: Antigravity & User Pair-programming
+# DESCRIPTION: Custom static rules for LINE TODAY (News) bypass AWS TPE and side CDNs
+# UPDATED: 2026-07-04
+
+DOMAIN-SUFFIX,linetoday.net
+DOMAIN-SUFFIX,line-images.com
+DOMAIN-SUFFIX,yimg.jp
+DOMAIN-SUFFIX,taboola.com
+IP-CIDR,43.213.0.0/16,no-resolve
