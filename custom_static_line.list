@@ -8,4 +8,4 @@ DOMAIN-SUFFIX,line-images.com
 DOMAIN-SUFFIX,yimg.jp
 DOMAIN-SUFFIX,taboola.com
 DOMAIN-SUFFIX,taboolanews.com
-IP-CIDR,43.213.0.0/16,no-resolve
+IP-CIDR,43.213.0.0/16
