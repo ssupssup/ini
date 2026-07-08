@@ -1,0 +1,20 @@
+# === Telemetry & Logging REJECT List ===
+DOMAIN,log.snssdk.com
+DOMAIN,rtlog.snssdk.com
+DOMAIN,mcs.snssdk.com
+DOMAIN,dm.snssdk.com
+DOMAIN,mon.zijieapi.com
+DOMAIN,mcs.zijieapi.com
+DOMAIN,toblog.ctobsnssdk.com
+DOMAIN,apmplus.volces.com
+DOMAIN,log-api.pangolin-sdk-toutiao.com
+DOMAIN,beacon.qq.com
+DOMAIN,rqd.qq.com
+DOMAIN,ios.bugly.qq.com
+DOMAIN,mdap.alipay.com
+DOMAIN,wn.pos.baidu.com
+DOMAIN,afd.baidu.com
+DOMAIN,afdconf.baidu.com
+DOMAIN,stats.jpush.cn
+DOMAIN,crashlytics.com
+DOMAIN,adjust.com
