@@ -35,5 +35,5 @@ DOMAIN,metrics.icloud.com
 DOMAIN,f10.baidu.com
 DOMAIN,ad.zijieapi.com
 DOMAIN,ads.zijieapi.com
-DOMAIN,fragments.zijieapi.com  # 或者是你定义的 pangolin.zijieapi.com
+DOMAIN,fragments.zijieapi.com
 DOMAIN,pangle.zijieapi.com
