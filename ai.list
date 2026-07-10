@@ -1,4 +1,4 @@
-# 自动更新时间: 2026-07-10 22:25:19
+# 自动更新时间: 2026-07-10 22:33:23
 
 # === User Custom AI & Apple Intelligence Rules ===
 # > Apple Intelligence / Apple AI
@@ -24,6 +24,8 @@ DOMAIN,segment.com
 DOMAIN,statsig.com
 DOMAIN,statsigapi.net
 DOMAIN,o532071.ingest.sentry.io
+# Sentry 官方崩溃日志平台，放行走代理以防止 ChatGPT / Claude 客户端初始化闪退及高频重试
+DOMAIN-SUFFIX,sentry.io
 # > Grok (xAI)
 DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,x.ai
@@ -63,7 +65,6 @@ DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,openaicom.imgix.net
 DOMAIN-SUFFIX,segment.io
-DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,turn.livekit.cloud
 DOMAIN-KEYWORD,openai
