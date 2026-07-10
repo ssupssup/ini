@@ -1,4 +1,4 @@
-# === Telemetry & Logging REJECT List (37 Total - Deduplicated) ===
+# === Telemetry & Logging REJECT List (45 Total - Deduplicated) ===
 DOMAIN,log.snssdk.com
 DOMAIN,rtlog.snssdk.com
 DOMAIN,mcs.snssdk.com
@@ -42,3 +42,4 @@ DOMAIN,h-adashx.dingtalkapps.com
 DOMAIN,h-adashx.ut.taobao.com
 DOMAIN,firebaselogging-pa.googleapis.com
 DOMAIN,app-analytics-services.com
+DOMAIN,log-hl.snssdk.com
