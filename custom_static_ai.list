@@ -26,6 +26,8 @@ DOMAIN,segment.com
 DOMAIN,statsig.com
 DOMAIN,statsigapi.net
 DOMAIN,o532071.ingest.sentry.io
+# Sentry 官方崩溃日志平台，放行走代理以防止 ChatGPT / Claude 客户端初始化闪退及高频重试
+DOMAIN-SUFFIX,sentry.io
 
 # > Grok (xAI)
 DOMAIN-SUFFIX,grok.com
