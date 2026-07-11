@@ -1,4 +1,4 @@
-# === Telemetry & Logging REJECT List (45 Total - Deduplicated) ===
+# === Telemetry & Logging REJECT List (77 Total - Deduplicated) ===
 DOMAIN,log.snssdk.com
 DOMAIN,rtlog.snssdk.com
 DOMAIN,mcs.snssdk.com
@@ -66,12 +66,9 @@ DOMAIN,pglstatp-toutiao.com
 DOMAIN,logs.amap.com
 DOMAIN,dualstack-logs.amap.com
 DOMAIN,sofire.baidu.com
-DOMAIN,opencloud.wostore.cn
 DOMAIN,cfgc.zztfly.com
 DOMAIN,upc.zztfly.com
-DOMAIN,id6.me
 DOMAIN,ma-adx.ctrip.com
-DOMAIN,config.cmpassport.com
 DOMAIN,tdid.m.qq.com
 DOMAIN,snowflake.qq.com
 DOMAIN,rmonitor.qq.com
