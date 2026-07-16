@@ -1,4 +1,4 @@
-# === Telemetry & Logging REJECT List (75 Total - Deduplicated) ===
+# === Telemetry & Logging REJECT List (76 Total - Deduplicated) ===
 DOMAIN,log.snssdk.com
 DOMAIN,rtlog.snssdk.com
 DOMAIN,mcs.snssdk.com
@@ -7,7 +7,6 @@ DOMAIN,mon.zijieapi.com
 DOMAIN,mcs.zijieapi.com
 DOMAIN,pc-mon.zijieapi.com
 DOMAIN,toblog.ctobsnssdk.com
-DOMAIN,apmplus.volces.com
 DOMAIN,log-api.pangolin-sdk-toutiao.com
 DOMAIN,beacon.qq.com
 DOMAIN,rqd.qq.com
