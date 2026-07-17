@@ -9,7 +9,8 @@ ssl._create_default_https_context = ssl._create_unverified_context
 # 切换为 clash-rules 原生 YAML 规则源
 SOURCES = {
     "gfw": "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt",
-    "direct": "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt"
+    "direct": "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt",
+    "telegramcidr": "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/telegramcidr.txt"
 }
 
 def download_url(url):
