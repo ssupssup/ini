@@ -1,4 +1,4 @@
-# 自动更新时间: 2026-07-18 05:10:16
+# 自动更新时间: 2026-07-18 18:39:45
 # 来源: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt
 
 DOMAIN-SUFFIX,2mdn-cn.net
@@ -67800,6 +67800,7 @@ DOMAIN-SUFFIX,mychuguan.com
 DOMAIN-SUFFIX,mychunyan.net
 DOMAIN-SUFFIX,myckjr.com
 DOMAIN-SUFFIX,mycleanmymac.com
+DOMAIN-SUFFIX,mycloudnas.com
 DOMAIN-SUFFIX,mycloudstudy.com
 DOMAIN-SUFFIX,myclub2.com
 DOMAIN-SUFFIX,mycnc.org
