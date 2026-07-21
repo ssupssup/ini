@@ -1,4 +1,4 @@
-# 自动更新时间: 2026-07-21 05:35:29
+# 自动更新时间: 2026-07-22 05:34:59
 # 来源: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt
 
 DOMAIN-SUFFIX,000webhost.com
@@ -786,6 +786,7 @@ DOMAIN-SUFFIX,civilmedia.tw
 DOMAIN-SUFFIX,civitai.com
 DOMAIN-SUFFIX,cixiaoya.club
 DOMAIN-SUFFIX,ck101.com
+DOMAIN-SUFFIX,clashyun.com
 DOMAIN-SUFFIX,classicalguitarblog.net
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claude.com
@@ -3439,6 +3440,7 @@ DOMAIN-SUFFIX,synapse.org
 DOMAIN-SUFFIX,syncback.com
 DOMAIN-SUFFIX,synergyse.com
 DOMAIN-SUFFIX,syosetu.com
+DOMAIN-SUFFIX,sysub.com
 DOMAIN-SUFFIX,t-g.com
 DOMAIN-SUFFIX,t.co
 DOMAIN-SUFFIX,t.me
