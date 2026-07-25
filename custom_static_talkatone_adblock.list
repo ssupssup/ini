@@ -87,7 +87,6 @@ DOMAIN-SUFFIX,tpc.googlesyndication-cn.com
 DOMAIN-SUFFIX,www.googletagservices-cn.com
 DOMAIN-SUFFIX,fundingchoicesmessages.google.com
 
-DOMAIN-SUFFIX,firebaseinstallations.googleapis.com
 DOMAIN-SUFFIX,firebaselogging-pa.googleapis.com
 DOMAIN-SUFFIX,firebaseremoteconfig.googleapis.com
 DOMAIN-SUFFIX,firebase-settings.crashlytics.com
