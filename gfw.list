@@ -1,4 +1,4 @@
-# 自动更新时间: 2026-08-02 05:11:49
+# 自动更新时间: 2026-08-03 05:12:28
 # 来源: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt
 
 DOMAIN-SUFFIX,000webhost.com
@@ -2681,6 +2681,7 @@ DOMAIN-SUFFIX,ntd.tv
 DOMAIN-SUFFIX,ntdtv.com
 DOMAIN-SUFFIX,ntdtv.com.tw
 DOMAIN-SUFFIX,ntdtv.cz
+DOMAIN-SUFFIX,nthlink.com
 DOMAIN-SUFFIX,nuexpo.com
 DOMAIN-SUFFIX,nurgo-software.com
 DOMAIN-SUFFIX,nusatrip.com
