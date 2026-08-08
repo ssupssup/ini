@@ -33,7 +33,7 @@ def main():
     except Exception as e:
         print(f"   ⚠️ 上游抓取失败，降级使用已有规则: {e}")
 
-    # 2. 读取本地静态补充文件
+    # 2. 读取本地静态补充文件 (严格叠加用户的 custom_static_apple_ai.list)
     if os.path.exists(STATIC_FILE):
         with open(STATIC_FILE, 'r', encoding='utf-8') as f:
             for line in f:
@@ -42,14 +42,11 @@ def main():
                     rules.add(line_str)
         print("   🟢 本地 custom_static_apple_ai.list 叠加成功")
 
-    # 强制确保精细化全域名规则存在
-    rules.add("DOMAIN,sequoia.cdn-apple.com")
-
     # 3. 排序与输出
     sorted_rules = sorted(list(rules))
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         f.write("# 🍎 苹果 AI 专属分流规则集 (自用自动清洗合并版)\n")
-        f.write("# 包含: 上游 Loon 权威源 (已剔除 apps.mzstatic.com) + 本地 encrypted-tbn 搜索物料补充\n")
+        f.write("# 包含: 上游 Loon 权威源 (已剔除 apps.mzstatic.com) + 本地 custom_static_apple_ai.list 抓包物料补充\n")
         f.write(f"# 总计规则条数: {len(sorted_rules)}\n\n")
         for r in sorted_rules:
             f.write(f"{r}\n")
