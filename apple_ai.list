@@ -1,0 +1,26 @@
+# 🍎 苹果 AI 专属分流规则集 (自用自动清洗合并版)
+# 包含: 上游 Loon 权威源 (已剔除 apps.mzstatic.com) + 本地 encrypted-tbn 搜索物料补充
+# 总计规则条数: 22
+
+DOMAIN-KEYWORD,apple-dns
+DOMAIN-KEYWORD,apple-relay
+DOMAIN-KEYWORD,mask
+DOMAIN-SUFFIX,apple-relay.apple.com
+DOMAIN-SUFFIX,apple-relay.cloudflare.com
+DOMAIN-SUFFIX,apple-relay.fastly-edge.com
+DOMAIN-SUFFIX,cp4.cloudflare.com
+DOMAIN-SUFFIX,encrypted-tbn0.gstatic.com
+DOMAIN-SUFFIX,encrypted-tbn1.gstatic.com
+DOMAIN-SUFFIX,encrypted-tbn2.gstatic.com
+DOMAIN-SUFFIX,encrypted-tbn3.gstatic.com
+DOMAIN-SUFFIX,gateway.icloud.com
+DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
+DOMAIN-SUFFIX,guzzoni.apple.com
+DOMAIN-SUFFIX,ls.apple.com
+DOMAIN-SUFFIX,mask-api.fe.apple-dns.net
+DOMAIN-SUFFIX,mask-api.icloud.com
+DOMAIN-SUFFIX,mask-h2.icloud.com
+DOMAIN-SUFFIX,mask-t.apple-dns.net
+DOMAIN-SUFFIX,mask.apple-dns.net
+DOMAIN-SUFFIX,mask.icloud.com
+DOMAIN-SUFFIX,smoot.apple.com
