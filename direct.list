@@ -1,4 +1,4 @@
-# 自动更新时间: 2026-08-08 05:02:39
+# 自动更新时间: 2026-08-08 08:47:42
 # 来源: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt
 
 DOMAIN-SUFFIX,2mdn-cn.net
@@ -61230,6 +61230,7 @@ DOMAIN-SUFFIX,lifeup.vip
 DOMAIN-SUFFIX,lifevc.com
 DOMAIN-SUFFIX,lifevccdn.com
 DOMAIN-SUFFIX,lifeweeker.com
+DOMAIN-SUFFIX,lifexue.com
 DOMAIN-SUFFIX,lifeyk.com
 DOMAIN-SUFFIX,lifeyn.net
 DOMAIN-SUFFIX,lifezb.com
