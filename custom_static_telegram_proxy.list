@@ -1,6 +1,13 @@
 # =================================================================
-# 📲 Telegram 全量 IP-CIDR 与自治系统 (ASN) 静态补漏代理规则集 (custom_static_telegram_proxy.list)
+# 📲 Telegram 全量 IP-CIDR、自治系统 (ASN) 与视频 CDN 静态补漏代理规则集 (custom_static_telegram_proxy.list)
 # =================================================================
+# Telegram 视频/媒体 CDN 域名补漏 (解决视频切片与大文件下载走慢速节点)
+DOMAIN-SUFFIX,cdn-telegram.org
+DOMAIN-SUFFIX,telegramdownload.com
+DOMAIN-SUFFIX,telegram.space
+DOMAIN-SUFFIX,telegram.dog
+
+# Telegram 官方 IP-CIDR 与自治系统 (ASN)
 IP-CIDR,91.105.192.0/23,no-resolve
 IP-CIDR,91.108.0.0/16,no-resolve
 IP-CIDR,95.161.64.0/20,no-resolve
