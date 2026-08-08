@@ -4,7 +4,8 @@ DOMAIN-SUFFIX,doubleclick.net
 DOMAIN-SUFFIX,pagead2.googlesyndication.com
 DOMAIN-SUFFIX,video-ad-stats.googlesyndication.com
 DOMAIN-SUFFIX,adservice.google.com
-DOMAIN-SUFFIX,google-analytics.com
+# 2026-08-08 禁用：防止导致 iOS 苹果 AI / Spotlight 智能搜索报错“Google不可用”
+# DOMAIN-SUFFIX,google-analytics.com
 DOMAIN-SUFFIX,admob.com
 
 DOMAIN-SUFFIX,ads.unity3d.com
