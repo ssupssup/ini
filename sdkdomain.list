@@ -21,14 +21,8 @@ DOMAIN,io-sm-log.tantanapp.com
 DOMAIN,client-monitor.tantanapp.com
 DOMAIN,f10.baidu.com
 DOMAIN,ad.snssdk.com
-DOMAIN,ads.snssdk.com
-DOMAIN,mask.icloud.com
-DOMAIN,mask-api.icloud.com
-DOMAIN,mask-h2.icloud.com
 DOMAIN,monitor.ipv6-tantanapp.com.master.vip.tantanapp.com
 DOMAIN,pkoplink.com
-DOMAIN,sjxydc.com
-DOMAIN,metrics.icloud.com
 DOMAIN,ad.zijieapi.com
 DOMAIN,ads.zijieapi.com
 DOMAIN,pangolin.zijieapi.com
@@ -36,10 +30,8 @@ DOMAIN,pangle.zijieapi.com
 DOMAIN,dig.bdurl.net
 DOMAIN,h-adashx.dingtalkapps.com
 DOMAIN,h-adashx.ut.taobao.com
-DOMAIN,firebaselogging-pa.googleapis.com
 DOMAIN,app-analytics-services.com
 DOMAIN,log-hl.snssdk.com
-DOMAIN,app-measurement.com
 DOMAIN,fp-it.fengkongcloud.com
 DOMAIN,puata.info
 DOMAIN,apm-native.xiaohongshu.com
@@ -70,7 +62,6 @@ DOMAIN,rmonitor.qq.com
 DOMAIN,gd-stats.jpush.cn
 DOMAIN,ali-stats.jpush.cn
 DOMAIN,log-auth.zztfly.com
-DOMAIN,iadsdk.apple.com
 DOMAIN,df.tanx.com
 
 
