@@ -1,5 +1,6 @@
-# 苹果 AI 智能搜索加密物料补充 (仅补齐搜索图片缩略图，物理零副作用)
+# 苹果 AI 智能搜索加密物料与算力 CDN 补充 (精准单点补齐，物理零副作用)
 DOMAIN-SUFFIX,encrypted-tbn0.gstatic.com
 DOMAIN-SUFFIX,encrypted-tbn1.gstatic.com
 DOMAIN-SUFFIX,encrypted-tbn2.gstatic.com
 DOMAIN-SUFFIX,encrypted-tbn3.gstatic.com
+DOMAIN-SUFFIX,sequoia.cdn-apple.com
