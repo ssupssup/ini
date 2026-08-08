@@ -2,6 +2,7 @@
 # 包含: 上游 Loon 权威源 (已剔除 apps.mzstatic.com) + 本地 encrypted-tbn 搜索物料补充
 # 总计规则条数: 23
 
+DOMAIN,sequoia.cdn-apple.com
 DOMAIN-KEYWORD,apple-dns
 DOMAIN-KEYWORD,apple-relay
 DOMAIN-KEYWORD,mask
@@ -23,5 +24,4 @@ DOMAIN-SUFFIX,mask-h2.icloud.com
 DOMAIN-SUFFIX,mask-t.apple-dns.net
 DOMAIN-SUFFIX,mask.apple-dns.net
 DOMAIN-SUFFIX,mask.icloud.com
-DOMAIN-SUFFIX,sequoia.cdn-apple.com
 DOMAIN-SUFFIX,smoot.apple.com

@@ -1,6 +1,28 @@
-# 苹果 AI 智能搜索加密物料与算力 CDN 补充 (精准单点补齐，物理零副作用)
+# 苹果 AI 专属域名
+DOMAIN-KEYWORD,apple-dns
+DOMAIN-KEYWORD,apple-relay
+DOMAIN-KEYWORD,mask
+DOMAIN-SUFFIX,apple-relay.apple.com
+DOMAIN-SUFFIX,apple-relay.cloudflare.com
+DOMAIN-SUFFIX,apple-relay.fastly-edge.com
+DOMAIN-SUFFIX,cp4.cloudflare.com
+DOMAIN-SUFFIX,gateway.icloud.com
+DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
+DOMAIN-SUFFIX,guzzoni.apple.com
+DOMAIN-SUFFIX,ls.apple.com
+DOMAIN-SUFFIX,mask-api.fe.apple-dns.net
+DOMAIN-SUFFIX,mask-api.icloud.com
+DOMAIN-SUFFIX,mask-h2.icloud.com
+DOMAIN-SUFFIX,mask-t.apple-dns.net
+DOMAIN-SUFFIX,mask.apple-dns.net
+DOMAIN-SUFFIX,mask.icloud.com
+DOMAIN-SUFFIX,smoot.apple.com
+
+# 苹果 AI Sequoia 算力 CDN (精确全域名，物理保护防 C++ 算法擦除)
+DOMAIN,sequoia.cdn-apple.com
+
+# 苹果 AI 关联 Google 搜索物料
 DOMAIN-SUFFIX,encrypted-tbn0.gstatic.com
 DOMAIN-SUFFIX,encrypted-tbn1.gstatic.com
 DOMAIN-SUFFIX,encrypted-tbn2.gstatic.com
 DOMAIN-SUFFIX,encrypted-tbn3.gstatic.com
-DOMAIN-SUFFIX,sequoia.cdn-apple.com

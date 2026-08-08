@@ -42,6 +42,9 @@ def main():
                     rules.add(line_str)
         print("   🟢 本地 custom_static_apple_ai.list 叠加成功")
 
+    # 强制确保精细化全域名规则存在
+    rules.add("DOMAIN,sequoia.cdn-apple.com")
+
     # 3. 排序与输出
     sorted_rules = sorted(list(rules))
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
