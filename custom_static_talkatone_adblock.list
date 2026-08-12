@@ -1,6 +1,4 @@
 # 去广告规则
-DOMAIN-SUFFIX,googleads.g.doubleclick.net
-DOMAIN-SUFFIX,doubleclick.net
 DOMAIN-SUFFIX,pagead2.googlesyndication.com
 DOMAIN-SUFFIX,video-ad-stats.googlesyndication.com
 DOMAIN-SUFFIX,adservice.google.com
@@ -78,9 +76,7 @@ DOMAIN-SUFFIX,tappx.com
 DOMAIN-SUFFIX,ins.track.tappx.com
 DOMAIN-SUFFIX,ssp.api.tappx.com
 
-DOMAIN-SUFFIX,taboola.com
 
-DOMAIN-SUFFIX,googleads.g.doubleclick-cn.net
 DOMAIN-SUFFIX,lh3.googleadsserving.cn
 DOMAIN-SUFFIX,googlesyndication.com
 DOMAIN-SUFFIX,pagead2.googlesyndication-cn.com

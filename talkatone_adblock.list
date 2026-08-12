@@ -38,8 +38,6 @@ DOMAIN-SUFFIX,et-eus.w.inmobi.com
 DOMAIN-SUFFIX,ets-ap-southeast-1.track.smaato.net
 DOMAIN-SUFFIX,exchange-b-events.inner-active.mobi
 DOMAIN-SUFFIX,firebase-settings.crashlytics.com
-DOMAIN-SUFFIX,googleads.g.doubleclick.net
-DOMAIN-SUFFIX,googleads.g.doubleclick-cn.net
 DOMAIN-SUFFIX,googlesyndication.com
 DOMAIN-SUFFIX,gum.criteo.com
 DOMAIN-SUFFIX,i.l.inmobicdn.net
@@ -62,7 +60,6 @@ DOMAIN-SUFFIX,skadnetworks.fyber.com
 DOMAIN-SUFFIX,smaato.net
 DOMAIN-SUFFIX,ssp.api.tappx.com
 DOMAIN-SUFFIX,supply.inmobicdn.net
-DOMAIN-SUFFIX,taboola.com
 DOMAIN-SUFFIX,tappx.com
 DOMAIN-SUFFIX,tpc.googlesyndication-cn.com
 DOMAIN-SUFFIX,tr-asia.adsmoloco.com
@@ -70,7 +67,6 @@ DOMAIN-SUFFIX,view.adjust.com
 DOMAIN-SUFFIX,vst.c.appier.net
 DOMAIN-SUFFIX,wv.inner-active.mobi
 DOMAIN-SUFFIX,www.googletagservices-cn.com
-DOMAIN-SUFFIX,doubleclick.net
 DOMAIN-SUFFIX,pagead2.googlesyndication.com
 DOMAIN-SUFFIX,video-ad-stats.googlesyndication.com
 # 2026-08-08 禁用：防止导致 iOS 苹果 AI / Spotlight 智能搜索在调用 Google 时报错“Google不可用”
