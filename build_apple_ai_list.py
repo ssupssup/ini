@@ -9,9 +9,7 @@ UPSTREAM_URL = "https://raw.githubusercontent.com/CFJaychow526/apple-intelligenc
 OUTPUT_FILE = os.path.join(BASE_DIR, "apple_ai.list")
 
 EXCLUDE_DOMAINS = ["apps.mzstatic.com"]
-STATIC_CUSTOM_RULES = [
-    "DOMAIN,captive.apple.com"
-]
+STATIC_CUSTOM_RULES = []
 
 def main():
     print("🚀 开始抓取并清洗 Apple AI 规则集...")
