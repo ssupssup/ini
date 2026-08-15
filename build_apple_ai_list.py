@@ -9,6 +9,9 @@ UPSTREAM_URL = "https://raw.githubusercontent.com/CFJaychow526/apple-intelligenc
 OUTPUT_FILE = os.path.join(BASE_DIR, "apple_ai.list")
 
 EXCLUDE_DOMAINS = ["apps.mzstatic.com"]
+STATIC_CUSTOM_RULES = [
+    "DOMAIN,captive.apple.com"
+]
 
 def main():
     print("🚀 开始抓取并清洗 Apple AI 规则集...")
@@ -32,7 +35,12 @@ def main():
     except Exception as e:
         print(f"   ⚠️ 上游抓取失败: {e}")
 
-    # 2. 排序与输出
+    # 2. 追加用户自定义静态精细化强代理规则
+    for sr in STATIC_CUSTOM_RULES:
+        rules.add(sr)
+        print(f"   ➕ 成功静态编译追加精细化代理规则: {sr}")
+
+    # 3. 排序与输出
     sorted_rules = sorted(list(rules))
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
         f.write("# 🍎 苹果 AI 专属分流规则集 (自用自动清洗版)\n")
