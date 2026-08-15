@@ -1,4 +1,4 @@
-# === Telemetry & Logging REJECT List (75 Total - Deduplicated) ===
+# === Telemetry & Logging REJECT List (76 Total - Deduplicated) ===
 DOMAIN,log.snssdk.com
 DOMAIN,rtlog.snssdk.com
 DOMAIN,mcs.snssdk.com
@@ -65,5 +65,6 @@ DOMAIN,log-auth.zztfly.com
 DOMAIN,df.tanx.com
 DOMAIN,al.autohome.com.cn
 DOMAIN,dcs.ipinyou.com
+DOMAIN,applogapi.autohome.com.cn
 
 
