@@ -1,0 +1,7 @@
+DOMAIN,guzzoni.apple.com,Proxy
+DOMAIN-SUFFIX,smoot.apple.com,Proxy
+DOMAIN,apple-relay.cloudflare.com,Proxy
+DOMAIN,apple-relay.fastly-edge.com,Proxy
+DOMAIN,cp4.cloudflare.com,Proxy
+DOMAIN,apple-relay.apple.com,Proxy
+DOMAIN,gspe1-ssl.ls.apple.com,Proxy
