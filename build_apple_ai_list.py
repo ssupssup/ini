@@ -51,10 +51,16 @@ def main():
         print(f"   ➕ 成功静态编译追加精细化代理规则: {sr}")
 
     # 3. 排序与输出
+    import datetime
+    utc_now = datetime.datetime.utcnow()
+    beijing_now = utc_now + datetime.timedelta(hours=8)
+    beijing_time_str = beijing_now.strftime('%Y-%m-%d %H:%M:%S')
+
     sorted_rules = sorted(list(rules))
     with open(OUTPUT_FILE, 'w', encoding='utf-8') as f:
+        f.write(f"# 自动更新时间: {beijing_time_str}\n")
         f.write("# 🍎 苹果 AI 专属分流规则集 (自用自动清洗版)\n")
-        f.write("# 来源: 上游 Loon 权威源 (已剔除 apps.mzstatic.com)\n")
+        f.write("# 来源: 上游 Loon 权威源 (已剔除 apps.mzstatic.com 与 ls.apple.com)\n")
         f.write(f"# 总计规则条数: {len(sorted_rules)}\n\n")
         for r in sorted_rules:
             f.write(f"{r}\n")
