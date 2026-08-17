@@ -24,10 +24,13 @@ def main():
                 line_str = line.strip()
                 if not line_str or line_str.startswith("#") or line_str.startswith(";"):
                     continue
-                # 剔除误杀黑名单
-                if any(ex in line_str for ex in EXCLUDE_DOMAINS):
-                    print(f"   ✂️ 已剔除黑名单误杀规则: {line_str}")
-                    continue
+                # 剔除误杀黑名单 (精准匹配域名，防误杀 gspe1-ssl.ls.apple.com)
+                parts = line_str.split(',')
+                if len(parts) >= 2:
+                    domain_val = parts[1].strip().lower()
+                    if domain_val in EXCLUDE_DOMAINS:
+                        print(f"   ✂️ 已剔除黑名单误杀规则: {line_str}")
+                        continue
                 rules.add(line_str)
         print("   🟢 上游 AppleAI_relay.list 抓取并过滤成功")
     except Exception as e:
