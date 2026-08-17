@@ -34,6 +34,15 @@ def main():
         print(f"   ⚠️ 上游抓取失败: {e}")
 
     # 2. 追加用户自定义静态精细化强代理规则
+    custom_static_file = os.path.join(BASE_DIR, "custom_static_apple_ai.list")
+    if os.path.exists(custom_static_file):
+        with open(custom_static_file, 'r', encoding='utf-8', errors='ignore') as f:
+            for line in f:
+                line_str = line.strip()
+                if line_str and not line_str.startswith('#') and not line_str.startswith(';'):
+                    rules.add(line_str)
+                    print(f"   ➕ 成功静态编译追加精细化代理规则: {line_str}")
+
     for sr in STATIC_CUSTOM_RULES:
         rules.add(sr)
         print(f"   ➕ 成功静态编译追加精细化代理规则: {sr}")

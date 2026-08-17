@@ -27,8 +27,8 @@ jobs:
 
       - name: Run Scripts to Generate Lists
         run: |
-          if [ -f generate_ai_list.py ]; then
-            python generate_ai_list.py
+          if [ -f build_apple_ai_list.py ]; then
+            python build_apple_ai_list.py
           fi
           if [ -f generate_talkatone_list.py ]; then
             python generate_talkatone_list.py
