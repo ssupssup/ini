@@ -8,7 +8,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 UPSTREAM_URL = "https://raw.githubusercontent.com/CFJaychow526/apple-intelligence-in-Loon/refs/heads/main/AppleAI_relay.list"
 OUTPUT_FILE = os.path.join(BASE_DIR, "apple_ai.list")
 
-EXCLUDE_DOMAINS = ["apps.mzstatic.com"]
+EXCLUDE_DOMAINS = ["apps.mzstatic.com", "ls.apple.com"]
 STATIC_CUSTOM_RULES = []
 
 def main():
