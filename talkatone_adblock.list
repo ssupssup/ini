@@ -1,4 +1,4 @@
-# 自动更新时间: 2026-08-08 10:41:29
+# 自动更新时间: 2026-08-17 09:28:03
 
 # === Talkatone AdBlock Rules ===
 DOMAIN-SUFFIX,tk0x1.com
@@ -38,6 +38,8 @@ DOMAIN-SUFFIX,et-eus.w.inmobi.com
 DOMAIN-SUFFIX,ets-ap-southeast-1.track.smaato.net
 DOMAIN-SUFFIX,exchange-b-events.inner-active.mobi
 DOMAIN-SUFFIX,firebase-settings.crashlytics.com
+DOMAIN-SUFFIX,googleads.g.doubleclick.net
+DOMAIN-SUFFIX,googleads.g.doubleclick-cn.net
 DOMAIN-SUFFIX,googlesyndication.com
 DOMAIN-SUFFIX,gum.criteo.com
 DOMAIN-SUFFIX,i.l.inmobicdn.net
@@ -60,6 +62,7 @@ DOMAIN-SUFFIX,skadnetworks.fyber.com
 DOMAIN-SUFFIX,smaato.net
 DOMAIN-SUFFIX,ssp.api.tappx.com
 DOMAIN-SUFFIX,supply.inmobicdn.net
+DOMAIN-SUFFIX,taboola.com
 DOMAIN-SUFFIX,tappx.com
 DOMAIN-SUFFIX,tpc.googlesyndication-cn.com
 DOMAIN-SUFFIX,tr-asia.adsmoloco.com
@@ -69,8 +72,6 @@ DOMAIN-SUFFIX,wv.inner-active.mobi
 DOMAIN-SUFFIX,www.googletagservices-cn.com
 DOMAIN-SUFFIX,pagead2.googlesyndication.com
 DOMAIN-SUFFIX,video-ad-stats.googlesyndication.com
-# 2026-08-08 禁用：防止导致 iOS 苹果 AI / Spotlight 智能搜索在调用 Google 时报错“Google不可用”
-# DOMAIN-SUFFIX,google-analytics.com
 DOMAIN-SUFFIX,admob.com
 DOMAIN-SUFFIX,ads.unity3d.com
 DOMAIN-SUFFIX,unityads.unity3d.com
@@ -92,3 +93,4 @@ DOMAIN-SUFFIX,unitychina.cn
 DOMAIN-SUFFIX,unityedu.cn
 DOMAIN-SUFFIX,unityedu.com
 DOMAIN-SUFFIX,unityedu.com.cn
+PROCESS-NAME,unityhub.exe
