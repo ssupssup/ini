@@ -1,20 +1,16 @@
 # === User Custom AI & Apple Intelligence Rules ===
 # > Apple Intelligence / Apple AI
-# 核心Siri与听写服务
 DOMAIN,guzzoni.apple.com
-DOMAIN,smoot.apple.com
-
-# Apple Relay & Private Relay 相关
-# 新增：匹配任何包含 "apple-relay" 的域名 (如 mask.apple-relay.apple.com 等)
-DOMAIN-KEYWORD,apple-relay
-DOMAIN,apple-relay.apple.com
-DOMAIN,apple-relay.cloudflare.com
-DOMAIN,apple-relay.fastly-edge.com
-
-# 位置服务 (注意：代理此域名可能会改变系统判定的地理位置)
+DOMAIN-SUFFIX,smoot.apple.com
+DOMAIN-SUFFIX,apple-relay.apple.com
+DOMAIN-SUFFIX,apple-relay.cloudflare.com
+DOMAIN-SUFFIX,apple-relay.fastly-edge.com
 DOMAIN,gspe1-ssl.ls.apple.com
-# 连接性检查
 DOMAIN,cp4.cloudflare.com
+DOMAIN-SUFFIX,encrypted-tbn0.gstatic.com
+DOMAIN-SUFFIX,encrypted-tbn1.gstatic.com
+DOMAIN-SUFFIX,encrypted-tbn2.gstatic.com
+DOMAIN-SUFFIX,encrypted-tbn3.gstatic.com
 
 # > Yahoo (Keyword)
 DOMAIN-KEYWORD,yahoo.com
