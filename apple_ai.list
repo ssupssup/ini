@@ -1,20 +1,20 @@
-# 自动更新时间: 2026-08-18 22:25:49
+# 自动更新时间: 2026-08-18 22:44:58
 # 🍎 苹果 AI 专属分流规则集 (自用自动清洗版)
 # 来源: 上游 Loon 权威源 (已剔除 apps.mzstatic.com 与 ls.apple.com)
-# 总计规则条数: 24
+# 总计规则条数: 22
 
+DOMAIN,cp4.cloudflare.com
+DOMAIN,gspe1-ssl.ls.apple.com
 DOMAIN,guzzoni.apple.com
 DOMAIN,mask-api.fe.apple-dns.net
 DOMAIN,mask-api.icloud.com
 DOMAIN,mask-t.apple-dns.net
 DOMAIN,mask.apple-dns.net
 DOMAIN-KEYWORD,siri
-DOMAIN-SUFFIX,apple-relay.akamaized.net
 DOMAIN-SUFFIX,apple-relay.apple.com
 DOMAIN-SUFFIX,apple-relay.cloudflare.com
 DOMAIN-SUFFIX,apple-relay.fastly-edge.com
 DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net
-DOMAIN-SUFFIX,ca.iadsdk.apple.com
 DOMAIN-SUFFIX,cp4.cloudflare.com
 DOMAIN-SUFFIX,encrypted-tbn0.gstatic.com
 DOMAIN-SUFFIX,encrypted-tbn1.gstatic.com
@@ -22,8 +22,6 @@ DOMAIN-SUFFIX,encrypted-tbn2.gstatic.com
 DOMAIN-SUFFIX,encrypted-tbn3.gstatic.com
 DOMAIN-SUFFIX,gateway.icloud.com
 DOMAIN-SUFFIX,gspe1-ssl.ls.apple.com
-DOMAIN-SUFFIX,mask-api.icloud.com
 DOMAIN-SUFFIX,mask-h2.icloud.com
 DOMAIN-SUFFIX,mask.icloud.com
-DOMAIN-SUFFIX,sequoia.cdn-apple.com
 DOMAIN-SUFFIX,smoot.apple.com
