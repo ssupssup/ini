@@ -13,7 +13,8 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 AI_SOURCES = {
     "OpenAI": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI.yaml",
     "Claude": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.yaml",
-    "Gemini": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.yaml",
+    "Gemini_List": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Gemini/Gemini.list",
+    "Gemini_Yaml": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.yaml",
     "Copilot": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.yaml"
 }
 
@@ -24,7 +25,10 @@ POLLUTION_DOMAINS = [
 ALLOWED_SUBDOMAINS = [
     "gemini.google.com", "generativelanguage.googleapis.com", "notebooklm.google.com", "alkalimira-pa.clients6.google.com",
     "copilot.microsoft.com", "sydney.bing.com", "edgeservices.bing.com",
-    "guzzoni.apple.com", "smoot.apple.com", "gspe1-ssl.ls.apple.com"
+    "guzzoni.apple.com", "smoot.apple.com", "gspe1-ssl.ls.apple.com",
+    "generativeai.google", "deepmind.google", "deepmind.com", "ai.google.dev",
+    "makersuite.google.com", "alkalimakersuite-pa.clients6.google.com", "proactivebackend-pa.googleapis.com",
+    "bard.google.com"
 ]
 
 def download_url(url):
@@ -50,9 +54,9 @@ def is_polluted(domain):
             return True
     return False
 
-def parse_clash_yaml(yaml_content):
+def parse_clash_rules(content):
     rules = []
-    lines = yaml_content.splitlines()
+    lines = content.splitlines()
     payload_section = False
     
     for line in lines:
@@ -64,19 +68,19 @@ def parse_clash_yaml(yaml_content):
             payload_section = True
             continue
             
-        if payload_section:
-            match = re.search(r'^-\s+([^,]+),([^,]+)(?:,.+)?', line_stripped)
-            if match:
-                rule_type = match.group(1).strip().upper()
-                value = match.group(2).strip().lower()
-                
-                if rule_type in ("DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD"):
-                    if is_polluted(value):
-                        continue
-                        
-                formatted_rule = f"{rule_type},{value}"
-                rules.append(formatted_rule)
+        # Parse YAML item (- TYPE,VALUE) or plain list item (TYPE,VALUE)
+        match = re.search(r'^(?:-\s+)?([^,]+),([^,]+)(?:,.+)?', line_stripped)
+        if match:
+            rule_type = match.group(1).strip().upper()
+            value = match.group(2).strip().lower()
+            
+            if rule_type in ("DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD"):
+                if is_polluted(value):
+                    continue
                     
+            formatted_rule = f"{rule_type},{value}"
+            rules.append(formatted_rule)
+                
     return rules
 
 def main():
@@ -89,7 +93,7 @@ def main():
             continue
             
         print(f"Parsing Clash rules for {service}...")
-        parsed = parse_clash_yaml(content)
+        parsed = parse_clash_rules(content)
         compiled_rules.extend(parsed)
         print(f" - Found {len(parsed)} clean rules for {service}")
         

@@ -1,4 +1,4 @@
-# 自动更新时间: 2026-08-19 17:46:52
+# 自动更新时间: 2026-08-19 17:54:12
 
 # === User Custom AI s ===
 # > Yahoo (Keyword)
@@ -60,6 +60,9 @@ IP-ASN,20473
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN,ai.google.dev
+DOMAIN,alkalimakersuite-pa.clients6.google.com
+DOMAIN,makersuite.google.com
+DOMAIN-SUFFIX,bard.google.com
 DOMAIN-SUFFIX,deepmind.com
 DOMAIN-SUFFIX,deepmind.google
 DOMAIN-SUFFIX,gemini.google.com
