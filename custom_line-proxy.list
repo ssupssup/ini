@@ -1,20 +1,14 @@
-# ----------------- 小火箭抓包 1:1 精准匹配域名 (19 个) -----------------
+# ----------------- LINE 原生服务域名 -----------------
+DOMAIN,lan.line.me
+DOMAIN,legy.line-apps.com
+DOMAIN,uts-front.line-apps.com
+
+# ----------------- Taboola / Taboolanews 新闻服务商域名 -----------------
 DOMAIN,api-events.taboola.com
 DOMAIN,atlas.taboolanews.com
 DOMAIN,beacon.taboola.com
 DOMAIN,cdn.taboola.com
 DOMAIN,cdn.taboolanews.com
-DOMAIN,ep1.adtrafficquality.google
-DOMAIN,ep2.adtrafficquality.google
-DOMAIN,fonts.googleapis.com
-DOMAIN,fonts.gstatic.com
-DOMAIN,gspe1-ssl.ls.apple.com
 DOMAIN,images.taboola.com
-DOMAIN,lan.line.me
-DOMAIN,legy.line-apps.com
-DOMAIN,ly.my.sentry.io
-DOMAIN,pubads.g.doubleclick.net
-DOMAIN,securepubads.g.doubleclick.net
 DOMAIN,trc.taboola.com
 DOMAIN,ty-trc-events.taboola.com
-DOMAIN,uts-front.line-apps.com
