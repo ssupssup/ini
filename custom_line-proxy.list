@@ -1,14 +1,8 @@
-# ----------------- LINE 原生服务域名 -----------------
-DOMAIN,lan.line.me
-DOMAIN,legy.line-apps.com
-DOMAIN,uts-front.line-apps.com
-
-# ----------------- Taboola / Taboolanews 新闻服务商域名 -----------------
-DOMAIN,api-events.taboola.com
-DOMAIN,atlas.taboolanews.com
-DOMAIN,beacon.taboola.com
-DOMAIN,cdn.taboola.com
-DOMAIN,cdn.taboolanews.com
-DOMAIN,images.taboola.com
-DOMAIN,trc.taboola.com
-DOMAIN,ty-trc-events.taboola.com
+# ----------------- LINE TODAY 新闻与组件补漏 -----------------
+DOMAIN-SUFFIX,linetoday.net
+DOMAIN-SUFFIX,line-website.com
+DOMAIN-SUFFIX,naver.com
+DOMAIN-SUFFIX,lnwfile.com
+DOMAIN-SUFFIX,livedoor.com
+DOMAIN-SUFFIX,taboola.com
+DOMAIN-SUFFIX,taboolanews.com
