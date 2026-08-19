@@ -1,0 +1,20 @@
+# ----------------- LINE TODAY 独家新闻信息流与图片服务商 (Taboola) -----------------
+DOMAIN-SUFFIX,taboola.com
+DOMAIN-SUFFIX,taboolanews.com
+
+# ----------------- LINE 原生网关与内部服务接口 -----------------
+DOMAIN-SUFFIX,line-apps.com
+DOMAIN-SUFFIX,line.me
+DOMAIN-SUFFIX,line-cdn.net
+DOMAIN-SUFFIX,line-scdn.net
+DOMAIN-SUFFIX,lin.ee
+DOMAIN-SUFFIX,linecorp.com
+
+# ----------------- LINE 新闻依赖的 Google 字体与渲染框架 -----------------
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN-SUFFIX,adtrafficquality.google
+DOMAIN-SUFFIX,doubleclick.net
+
+# ----------------- LINE 新闻错误日志 SDK -----------------
+DOMAIN-SUFFIX,sentry.io
