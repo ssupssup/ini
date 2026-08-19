@@ -19,7 +19,7 @@ WHITELIST_DOMAINS = [
     "google.com", "youtube.com", "googleapis.com", "gstatic.com",
     "googleusercontent.com", "ggpht.com", "gvt1.com", "1e100.net",
     "amazon.com", "amazonaws.com", "amazonaws.com.cn", "cloudfront.net",
-    "taboola.com", "taboolanews.com"
+    "taboola.com"
 ]
 
 def download_url(url):
