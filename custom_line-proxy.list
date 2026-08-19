@@ -1,20 +1,20 @@
-# ----------------- LINE TODAY 独家新闻信息流与图片服务商 (Taboola) -----------------
-DOMAIN-SUFFIX,taboola.com
-DOMAIN-SUFFIX,taboolanews.com
-
-# ----------------- LINE 原生网关与内部服务接口 -----------------
-DOMAIN-SUFFIX,line-apps.com
-DOMAIN-SUFFIX,line.me
-DOMAIN-SUFFIX,line-cdn.net
-DOMAIN-SUFFIX,line-scdn.net
-DOMAIN-SUFFIX,lin.ee
-DOMAIN-SUFFIX,linecorp.com
-
-# ----------------- LINE 新闻依赖的 Google 字体与渲染框架 -----------------
-DOMAIN-SUFFIX,googleapis.com
-DOMAIN-SUFFIX,gstatic.com
-DOMAIN-SUFFIX,adtrafficquality.google
-DOMAIN-SUFFIX,doubleclick.net
-
-# ----------------- LINE 新闻错误日志 SDK -----------------
-DOMAIN-SUFFIX,sentry.io
+# ----------------- 小火箭抓包 1:1 精准匹配域名 (19 个) -----------------
+DOMAIN,api-events.taboola.com
+DOMAIN,atlas.taboolanews.com
+DOMAIN,beacon.taboola.com
+DOMAIN,cdn.taboola.com
+DOMAIN,cdn.taboolanews.com
+DOMAIN,ep1.adtrafficquality.google
+DOMAIN,ep2.adtrafficquality.google
+DOMAIN,fonts.googleapis.com
+DOMAIN,fonts.gstatic.com
+DOMAIN,gspe1-ssl.ls.apple.com
+DOMAIN,images.taboola.com
+DOMAIN,lan.line.me
+DOMAIN,legy.line-apps.com
+DOMAIN,ly.my.sentry.io
+DOMAIN,pubads.g.doubleclick.net
+DOMAIN,securepubads.g.doubleclick.net
+DOMAIN,trc.taboola.com
+DOMAIN,ty-trc-events.taboola.com
+DOMAIN,uts-front.line-apps.com
