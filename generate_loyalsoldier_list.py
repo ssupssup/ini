@@ -9,8 +9,7 @@ ssl._create_default_https_context = ssl._create_unverified_context
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 SOURCES = {
-    "gfw": "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt",
-    "direct": "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt",
+        "direct": "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/direct.txt",
     "telegramcidr": "https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/telegramcidr.txt"
 }
 
