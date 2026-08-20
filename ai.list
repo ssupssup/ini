@@ -1,8 +1,6 @@
-# 自动更新时间: 2026-08-20 04:48:07
+# 自动更新时间: 2026-08-20 09:54:01
 
-# === User Custom AI s ===
-# > Yahoo (Keyword)
-DOMAIN-KEYWORD,yahoo.com
+# === User Custom AI Rules ===
 # > Claude (Anthropic) 依赖 of 第三方服务/分析统计
 DOMAIN,cdn.usefathom.com
 DOMAIN,segment.io
@@ -22,7 +20,7 @@ DOMAIN-SUFFIX,manus.im
 DOMAIN-SUFFIX,manus.app
 DOMAIN-SUFFIX,manus-api.im
 
-# === Compiled AI & Subdomain Rules ===
+# ------------------ OpenAI ------------------
 DOMAIN,browser-intake-datadoghq.com
 DOMAIN,chat.openai.com.cdn.cloudflare.net
 DOMAIN,openai-api.arkoselabs.com
@@ -57,8 +55,12 @@ DOMAIN-KEYWORD,openai
 IP-CIDR,24.199.123.28/32
 IP-CIDR,64.23.132.171/32
 IP-ASN,20473
+
+# ------------------ Claude ------------------
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
+
+# ------------------ Gemini ------------------
 DOMAIN,ai.google.dev
 DOMAIN,alkalimakersuite-pa.clients6.google.com
 DOMAIN,makersuite.google.com
@@ -71,6 +73,8 @@ DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
 DOMAIN-KEYWORD,colab
 DOMAIN-KEYWORD,developerprofiles
 DOMAIN-KEYWORD,generativelanguage
+
+# ------------------ Copilot ------------------
 DOMAIN,api.msn.com
 DOMAIN,api.statsig.com
 DOMAIN,assets.msn.com

@@ -84,7 +84,7 @@ def parse_clash_rules(content):
     return rules
 
 def main():
-    compiled_rules = []
+    compiled_by_service = {}
     
     for service, url in AI_SOURCES.items():
         content = download_url(url)
@@ -94,7 +94,7 @@ def main():
             
         print(f"Parsing Clash rules for {service}...")
         parsed = parse_clash_rules(content)
-        compiled_rules.extend(parsed)
+        compiled_by_service[service] = parsed
         print(f" - Found {len(parsed)} clean rules for {service}")
         
     final_rules = []
@@ -118,12 +118,18 @@ def main():
     else:
         print(f"Warning: {custom_rules_path} not found!")
                 
-    final_rules.append("\n# === Compiled AI & Subdomain Rules ===")
-    for rule in compiled_rules:
-        norm = rule.replace(" ", "").lower()
-        if norm not in seen:
-            seen.add(norm)
-            final_rules.append(rule)
+    for service, rules in compiled_by_service.items():
+        service_rules = []
+        for rule in rules:
+            norm = rule.replace(" ", "").lower()
+            if norm not in seen:
+                seen.add(norm)
+                service_rules.append(rule)
+                
+        if service_rules:
+            clean_name = service.split("_")[0]
+            final_rules.append(f"\n# ------------------ {clean_name} ------------------")
+            final_rules.extend(service_rules)
             
     output_path = os.path.join(BASE_DIR, "ai.list")
     
