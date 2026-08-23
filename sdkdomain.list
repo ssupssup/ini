@@ -16,3 +16,18 @@ DOMAIN-SUFFIX,df.tanx.com
 
 # 品友互动 (ipinyou)
 DOMAIN-SUFFIX,dcs.ipinyou.com
+
+# 谷歌 Firebase / 运行遥测
+DOMAIN-SUFFIX,crashlytics.com
+DOMAIN-SUFFIX,app-measurement.com
+
+# 归因服务 (Adjust / AppsFlyer)
+DOMAIN-SUFFIX,adjust.com
+DOMAIN-SUFFIX,appsflyersdk.com
+
+# 三方遥测 / 广告变体
+DOMAIN-SUFFIX,app-analytics-services.com
+DOMAIN-SUFFIX,puata.info
+
+# 数美风控
+DOMAIN,fp-it.fengkongcloud.com
