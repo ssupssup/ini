@@ -1,13 +1,9 @@
-# === Telemetry & Logging REJECT List (55 Total - Deduplicated) ===
-# ByteDance / 头条系
+# === Telemetry / SDK 遥测数据打点与广告防发热 ===
+# (2026-08-23: 已剔除 45 个受 fake-ip-filter 穿透的无效域名，交由 ADG 轨道 B 阻断)
+# 仅保留以下 9 个能有效获取 Fake-IP 并被 OC 完美阻断的纯净域名
+
+# ByteDance / 字节跳动 (snssdk)
 DOMAIN,ad.snssdk.com
-DOMAIN,ad.zijieapi.com
-DOMAIN,ads.zijieapi.com
-DOMAIN,pangolin.zijieapi.com
-DOMAIN,pangle.zijieapi.com
-DOMAIN-SUFFIX,pangolin-sdk-toutiao.com
-DOMAIN-SUFFIX,pangolin-sdk-toutiao1.com
-DOMAIN-SUFFIX,pglstatp-toutiao.com
 DOMAIN,log.snssdk.com
 DOMAIN,rtlog.snssdk.com
 DOMAIN,mcs.snssdk.com
@@ -15,61 +11,8 @@ DOMAIN,dm.snssdk.com
 DOMAIN,toblog.ctobsnssdk.com
 DOMAIN,log-hl.snssdk.com
 
-# 百度系
-DOMAIN,wn.pos.baidu.com
-DOMAIN,afd.baidu.com
-DOMAIN,afdconf.baidu.com
-DOMAIN,f10.baidu.com
-DOMAIN,sofire.baidu.com
-DOMAIN,dig.bdurl.net
-
-# 腾讯系
-DOMAIN,sdk.e.qq.com
-DOMAIN,mi.gdt.qq.com
-DOMAIN,xs.gdt.qq.com
-DOMAIN,beacon.qq.com
-DOMAIN,rqd.qq.com
-DOMAIN,tdid.m.qq.com
-DOMAIN,rmonitor.qq.com
-
-# 阿里系
-DOMAIN,h-adashx.dingtalkapps.com
-DOMAIN,h-adashx.ut.taobao.com
+# 阿里 Tanx
 DOMAIN-SUFFIX,df.tanx.com
-DOMAIN,mdap.alipay.com
 
-# 友盟 (Umeng)
-DOMAIN-SUFFIX,utoken.umeng.com
-DOMAIN-SUFFIX,cnlogs.umengcloud.com
-DOMAIN-SUFFIX,resolve.umeng.com
-DOMAIN-SUFFIX,cnlogs.umeng.com
-DOMAIN-SUFFIX,errnewlog.umeng.com
-
-# 极光推送 (JPush)
-DOMAIN,stats.jpush.cn
-DOMAIN,gd-stats.jpush.cn
-DOMAIN,ali-stats.jpush.cn
-
-# 小红书
-DOMAIN,apm-native.xiaohongshu.com
-DOMAIN,t2.xiaohongshu.com
-DOMAIN,spider-tracker.xiaohongshu.com
-DOMAIN,lng.xiaohongshu.com
-DOMAIN,apm-fe.xiaohongshu.com
-
-# 探探
-DOMAIN,app-log-lab.tantanapp.com
-DOMAIN,io-sm-log.tantanapp.com
-DOMAIN,client-monitor.tantanapp.com
-
-# 汽车之家
-DOMAIN,al.autohome.com.cn
-DOMAIN,applogapi.autohome.com.cn
-
-# 携程 / 品友 / 掌中飞天 / 其他
-DOMAIN,ma-adx.ctrip.com
+# 品友互动 (ipinyou)
 DOMAIN-SUFFIX,dcs.ipinyou.com
-DOMAIN-SUFFIX,cfgc.zztfly.com
-DOMAIN-SUFFIX,upc.zztfly.com
-DOMAIN-SUFFIX,log-auth.zztfly.com
-
