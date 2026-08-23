@@ -1,6 +1,5 @@
 # === Telemetry / SDK 遥测数据打点与广告防发热 ===
-# (2026-08-23: 已剔除 45 个受 fake-ip-filter 穿透的无效域名，交由 ADG 轨道 B 阻断)
-# 仅保留以下 9 个能有效获取 Fake-IP 并被 OC 完美阻断的纯净域名
+# (2026-08-23: 仅保留以下 9 个能有效获取 Fake-IP 并被 OC 完美阻断的纯净域名 加国外7个，共16个
 
 # ByteDance / 字节跳动 (snssdk)
 DOMAIN,ad.snssdk.com
