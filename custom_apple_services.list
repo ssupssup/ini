@@ -1,20 +1,20 @@
 # 苹果中国地图 阿里云 CDN 节点
-gspe19-cn-ssl.ls.apple.com.w.alikunlun.com
+DOMAIN-SUFFIX,gspe19-cn-ssl.ls.apple.com.w.alikunlun.com
 
 # App Store 静态资源 阿里云 CDN 节点
-is1-ssl.mzstatic.com.w.alikunlun.com
+DOMAIN-SUFFIX,is1-ssl.mzstatic.com.w.alikunlun.com
 
 # iOS 资源 FastCDN 节点
-ioshost.qtlcdn.com
+DOMAIN-SUFFIX,ioshost.qtlcdn.com
 
 # 金山云 App 内购及资源 CDN
-k128-inapp.gslb.ksyuncdn.com
+DOMAIN-SUFFIX,k128-inapp.gslb.ksyuncdn.com
 
 # Apple ID 认证 Akamai 调度节点
-gsa.idms-apple.com.akadns.net
+DOMAIN-SUFFIX,gsa.idms-apple.com.akadns.net
 
 # 苹果地图 Akamai 智能解析调度节点
-gsp64-ssl.ls-apple.com.akadns.net
+DOMAIN-SUFFIX,gsp64-ssl.ls-apple.com.akadns.net
 
 # App Store 中国区负载均衡调度节点
-amp-api.apps-lb-cn.itunes-apple.com.akadns.net
+DOMAIN-SUFFIX,amp-api.apps-lb-cn.itunes-apple.com.akadns.net
