@@ -25,3 +25,6 @@ DOMAIN-SUFFIX,captive.apple.com
 
 # 苹果 APNs（Apple Push Notification service，苹果推送通知服务）沙盒（Sandbox）环境的 Akamai 智能调度/负载均衡域名
 DOMAIN-SUFFIX,courier-sandbox-push-apple.com.akadns.net
+
+# Apple 的 Key Transparency（密钥透明度） 生产环境服务域名
+DOMAIN-SUFFIX,kt-prod.ess.apple.com
