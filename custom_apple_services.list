@@ -32,7 +32,7 @@ DOMAIN-SUFFIX,kt-prod.ess.apple.com
 # APNs 苹果推送通知服务
 DOMAIN-SUFFIX,courier-push-apple.com.akadns.net
 # 苹果软件更新及设备管理服务
-DOMAIN-SUFFIX,gdmf-ados.apple.com.
+DOMAIN-SUFFIX,gdmf-ados.apple.com
 # App Store / iTunes 亚太边缘 CDN 节点
 DOMAIN-SUFFIX,edge-itunes-apple.com.akadns.net
 
