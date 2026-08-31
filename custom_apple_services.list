@@ -19,3 +19,9 @@ DOMAIN,gsp64-ssl.ls-apple.com.akadns.net
 
 # App Store 中国区负载均衡调度节点
 DOMAIN,amp-api.apps-lb-cn.itunes-apple.com.akadns.net
+
+# 苹果设备用于“强制网络门户（Captive Portal）连通性检测”的官方探测域名
+DOMAIN-SUFFIX,captive.apple.com
+
+# 苹果 APNs（Apple Push Notification service，苹果推送通知服务）沙盒（Sandbox）环境的 Akamai 智能调度/负载均衡域名
+DOMAIN-SUFFIX,courier-sandbox-push-apple.com.akadns.net
