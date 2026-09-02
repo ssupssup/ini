@@ -40,5 +40,5 @@ DOMAIN-SUFFIX,edge-itunes-apple.com.akadns.net
 DOMAIN,time.asia.apple.com
 
 DOMAIN-SUFFIX,apple-dns.net
-DOMAIN-SUFFIX,p187-contacts.icloud.com
+DOMAIN-KEYWORD,contacts.icloud.com
 
