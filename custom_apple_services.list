@@ -36,3 +36,6 @@ DOMAIN-SUFFIX,gdmf-ados.apple.com
 # App Store / iTunes 亚太边缘 CDN 节点
 DOMAIN-SUFFIX,edge-itunes-apple.com.akadns.net
 
+# 苹果在亚洲区域部署的 NTP（网络时间协议，UDP 123 端口）同步服务器
+DOMAIN,time.asia.apple.com
+
