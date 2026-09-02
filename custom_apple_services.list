@@ -40,5 +40,12 @@ DOMAIN-SUFFIX,edge-itunes-apple.com.akadns.net
 DOMAIN,time.asia.apple.com
 
 DOMAIN-SUFFIX,apple-dns.net
+# iCloud 核心后台长连接与容量心跳
+DOMAIN-KEYWORD,caldav.icloud.com
+DOMAIN-KEYWORD,fmip.icloud.com
+DOMAIN-KEYWORD,fmipmobile.icloud.com
+DOMAIN-KEYWORD,quota.icloud.com
+DOMAIN-KEYWORD,acsegateway.icloud.com
+DOMAIN-KEYWORD,content.icloud.com
 DOMAIN-KEYWORD,contacts.icloud.com
 
