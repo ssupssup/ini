@@ -39,6 +39,7 @@ DOMAIN-SUFFIX,edge-itunes-apple.com.akadns.net
 # 苹果在亚洲区域部署的 NTP（网络时间协议，UDP 123 端口）同步服务器
 DOMAIN,time.asia.apple.com
 
+DOMAIN-SUFFIX,gateway.icloud.com
 DOMAIN-SUFFIX,apple-dns.net
 # iCloud 核心后台长连接与容量心跳
 DOMAIN-KEYWORD,caldav.icloud.com
