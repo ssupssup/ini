@@ -21,3 +21,7 @@ DOMAIN-SUFFIX,poe.com
 DOMAIN-SUFFIX,manus.im
 DOMAIN-SUFFIX,manus.app
 DOMAIN-SUFFIX,manus-api.im
+
+# > Antigravity 
+DOMAIN-SUFFIX,antigravity-unleash.goog
+DOMAIN-KEYWORD,antigravity
