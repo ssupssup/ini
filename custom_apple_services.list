@@ -50,3 +50,10 @@ DOMAIN-KEYWORD,acsegateway.icloud.com
 DOMAIN-KEYWORD,content.icloud.com
 DOMAIN-KEYWORD,contacts.icloud.com
 
+# 苹果 App Store / iTunes 特供 CDN 与系统验证服务
+DOMAIN-SUFFIX,itunes.apple.com
+DOMAIN-SUFFIX,apps.apple.com
+DOMAIN-SUFFIX,ksyuncdn.com
+DOMAIN-SUFFIX,qtlcdn.com
+DOMAIN-SUFFIX,cdngslb.com
+DOMAIN-SUFFIX,ess.apple.com
