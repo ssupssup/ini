@@ -1,0 +1,2 @@
+# 自定义强制代理网站列表 (覆盖上游 GeoSite/ChinaDomain 误判直连)
+DOMAIN-SUFFIX,23img.com
