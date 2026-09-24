@@ -1,5 +1,4 @@
 # ------------------ 1. Apple Intelligence (走代理) ------------------
-DOMAIN,api-siri-prod.apple.com
 DOMAIN,guzzoni.apple.com
 DOMAIN-SUFFIX,smoot.apple.com
 DOMAIN-SUFFIX,apple-relay.apple.com
