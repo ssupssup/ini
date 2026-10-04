@@ -1,9 +1,14 @@
-# Bybit 专属全量本地分流
+# Bybit 专属全量分流（建议放在自定义规则靠前位置）
 DOMAIN-KEYWORD,bybit
-DOMAIN-KEYWORD,bybits
 DOMAIN-SUFFIX,byapps.net
 DOMAIN-SUFFIX,bycsi.com
-DOMAIN-SUFFIX,bybitimages.com
+DOMAIN-SUFFIX,by-csi.com
 DOMAIN-SUFFIX,bytick.com
 DOMAIN-SUFFIX,byqd.net
 DOMAIN-SUFFIX,byb.com
+DOMAIN-SUFFIX,byapis.com
+DOMAIN-SUFFIX,by-risk.com
+DOMAIN-SUFFIX,byc0.com
+DOMAIN-SUFFIX,bycdn.com
+DOMAIN-SUFFIX,bystatic.com
+DOMAIN-SUFFIX,bybitcorp.com
