@@ -1,6 +1,12 @@
-# 自动更新时间: 2026-10-10 08:04:22
+# 自动更新时间: 2026-10-10 19:59:52
 
 # === User Custom AI Rules ===
+# > Chrome 问问 Gemini / Google AI 组件强代理补全
+DOMAIN,clients6.google.com
+DOMAIN-SUFFIX,clients6.google.com
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,gemini.google
+DOMAIN-KEYWORD,generativelanguage
 # > Claude (Anthropic) 依赖 of 第三方服务/分析统计
 DOMAIN-SUFFIX,cdn.usefathom.com
 DOMAIN-SUFFIX,segment.io
@@ -85,7 +91,6 @@ DOMAIN-SUFFIX,generativeai.google
 DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
 DOMAIN-KEYWORD,colab
 DOMAIN-KEYWORD,developerprofiles
-DOMAIN-KEYWORD,generativelanguage
 
 # ------------------ Copilot ------------------
 DOMAIN,api.msn.com
