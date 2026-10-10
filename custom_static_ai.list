@@ -1,5 +1,12 @@
 # === User Custom AI Rules ===
 
+# > Chrome 问问 Gemini / Google AI 组件强代理补全
+DOMAIN,clients6.google.com
+DOMAIN-SUFFIX,clients6.google.com
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,gemini.google
+DOMAIN-KEYWORD,generativelanguage
+
 # > Claude (Anthropic) 依赖 of 第三方服务/分析统计
 DOMAIN-SUFFIX,cdn.usefathom.com
 DOMAIN-SUFFIX,segment.io
