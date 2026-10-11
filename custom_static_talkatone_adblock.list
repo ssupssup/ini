@@ -105,3 +105,9 @@ DOMAIN-SUFFIX,a1.tntk.be
 
 # DOMAIN-SUFFIX,d.tktn.be
 # DOMAIN-KEYWORD,googleads
+
+# Talkatone 币安横幅广告 (Liftoff / 4dvertible / Verve)
+DOMAIN-SUFFIX,chinaliftoff.io
+DOMAIN-SUFFIX,chinaliftoff-creatives.io
+DOMAIN-SUFFIX,4dvertible.com
+DOMAIN-SUFFIX,verve.net
