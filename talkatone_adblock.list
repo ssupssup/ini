@@ -1,4 +1,4 @@
-# 自动更新时间: 2026-10-11 20:25:52
+# 自动更新时间: 2026-10-11 20:40:00
 
 # === Talkatone AdBlock Rules ===
 DOMAIN-SUFFIX,eqt-gc.rendering.sharethrough.com
@@ -91,6 +91,13 @@ DOMAIN-SUFFIX,chinaliftoff.io
 DOMAIN-SUFFIX,chinaliftoff-creatives.io
 DOMAIN-SUFFIX,4dvertible.com
 DOMAIN-SUFFIX,verve.net
+DOMAIN-SUFFIX,pubads.g.doubleclick.net
+DOMAIN-SUFFIX,inmobi.com
+DOMAIN-SUFFIX,inmobi.cn
+DOMAIN-SUFFIX,pubnative.net
+DOMAIN-SUFFIX,app-ads-services.com
+DOMAIN-SUFFIX,sift.co
+DOMAIN-SUFFIX,vervegroupinc.net
 DOMAIN-SUFFIX,multiplay.cn
 DOMAIN-SUFFIX,unity.cn
 DOMAIN-SUFFIX,unity.com
