@@ -111,3 +111,16 @@ DOMAIN-SUFFIX,chinaliftoff.io
 DOMAIN-SUFFIX,chinaliftoff-creatives.io
 DOMAIN-SUFFIX,4dvertible.com
 DOMAIN-SUFFIX,verve.net
+# Google 广告核心物料与分发
+DOMAIN-SUFFIX,googleads.g.doubleclick.net
+DOMAIN-SUFFIX,googleads.g.doubleclick-cn.net
+DOMAIN-SUFFIX,pubads.g.doubleclick.net
+DOMAIN-SUFFIX,imasdk.googleapis.com
+# InMobi 广告全网与中国区
+DOMAIN-SUFFIX,inmobi.com
+DOMAIN-SUFFIX,inmobi.cn
+# 广告聚合交易与物料分发
+DOMAIN-SUFFIX,pubnative.net
+DOMAIN-SUFFIX,app-ads-services.com
+DOMAIN-SUFFIX,sift.co
+DOMAIN-SUFFIX,vervegroupinc.net
