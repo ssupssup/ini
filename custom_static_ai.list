@@ -58,4 +58,6 @@ DOMAIN-SUFFIX,substrate.office.com
 DOMAIN-SUFFIX,trouter.skype.com
 DOMAIN,res.public.onecdn.static.microsoft
 DOMAIN,login.microsoftonline.com
+DOMAIN-SUFFIX,teams.microsoft.com
+DOMAIN-SUFFIX,events.data.microsoft.com
 
