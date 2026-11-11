@@ -24,7 +24,7 @@ POLLUTION_DOMAINS = [
 
 ALLOWED_SUBDOMAINS = [
     "gemini.google.com", "generativelanguage.googleapis.com", "notebooklm.google.com", "alkalimira-pa.clients6.google.com",
-    "copilot.microsoft.com", "sydney.bing.com", "edgeservices.bing.com",
+    "copilot.microsoft.com", "copilot.cloud.microsoft", "sydney.bing.com", "edgeservices.bing.com", "bingapis.com",
     "guzzoni.apple.com", "smoot.apple.com", "gspe1-ssl.ls.apple.com",
     "generativeai.google", "deepmind.google", "deepmind.com", "ai.google.dev",
     "makersuite.google.com", "alkalimakersuite-pa.clients6.google.com", "proactivebackend-pa.googleapis.com",
