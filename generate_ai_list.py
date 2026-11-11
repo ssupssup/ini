@@ -99,6 +99,26 @@ def main():
         
     final_rules = []
     seen = set()
+    suffix_set = set()
+
+    def is_covered(rule_str):
+        parts = rule_str.split(",")
+        if len(parts) >= 2:
+            rtype = parts[0].strip().upper()
+            val = parts[1].strip().lower()
+            if rtype == "DOMAIN":
+                for s in suffix_set:
+                    if val == s or val.endswith("." + s):
+                        return True
+        return False
+
+    def register_rule(rule_str):
+        parts = rule_str.split(",")
+        if len(parts) >= 2:
+            rtype = parts[0].strip().upper()
+            val = parts[1].strip().lower()
+            if rtype == "DOMAIN-SUFFIX":
+                suffix_set.add(val)
     
     custom_rules_path = os.path.join(BASE_DIR, "custom_static_ai.list")
     if os.path.exists(custom_rules_path):
@@ -110,8 +130,9 @@ def main():
             if line_stripped:
                 if not line_stripped.startswith("#"):
                     norm = line_stripped.replace(" ", "").lower()
-                    if norm not in seen:
+                    if norm not in seen and not is_covered(line_stripped):
                         seen.add(norm)
+                        register_rule(line_stripped)
                         final_rules.append(line_stripped)
                 else:
                     final_rules.append(line_stripped)
@@ -122,8 +143,9 @@ def main():
         service_rules = []
         for rule in rules:
             norm = rule.replace(" ", "").lower()
-            if norm not in seen:
+            if norm not in seen and not is_covered(rule):
                 seen.add(norm)
+                register_rule(rule)
                 service_rules.append(rule)
                 
         if service_rules:
