@@ -51,4 +51,6 @@ DOMAIN-SUFFIX,sydney.bing.com
 DOMAIN-SUFFIX,bingapis.com
 DOMAIN,gateway.bingviz.microsoft.net
 DOMAIN,gateway.bingviz.microsoftapp.net
+DOMAIN,edge.microsoft.com
+DOMAIN,substrate.office.com
 
