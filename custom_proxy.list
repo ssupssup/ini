@@ -34,3 +34,8 @@ DOMAIN-SUFFIX,postimages.org
 DOMAIN-SUFFIX,postimg.cc
 DOMAIN-SUFFIX,imagebam.com
 DOMAIN-SUFFIX,turboimagehost.com
+
+# 3. 跳转服务
+DOMAIN-SUFFIX,redircdn.com
+DOMAIN-SUFFIX,viidii.info
+DOMAIN-SUFFIX,viidii.com
