@@ -1,4 +1,4 @@
-# 自动更新时间: 2026-11-11 12:16:20
+# 自动更新时间: 2026-11-11 13:00:08
 
 # === User Custom AI Rules ===
 # > Chrome 问问 Gemini / Google AI 组件强代理补全
@@ -39,8 +39,10 @@ DOMAIN-SUFFIX,manus-api.im
 DOMAIN-SUFFIX,antigravity-unleash.goog
 DOMAIN-KEYWORD,antigravity
 # > Microsoft Copilot 核心精准分流 (防子域名漏网直连)
+DOMAIN-KEYWORD,copilot
 DOMAIN-SUFFIX,copilot.microsoft.com
 DOMAIN-SUFFIX,copilot.cloud.microsoft
+DOMAIN-SUFFIX,m365copilotapp.svc.cloud.microsoft
 DOMAIN-SUFFIX,edgeservices.bing.com
 DOMAIN-SUFFIX,sydney.bing.com
 DOMAIN-SUFFIX,bingapis.com

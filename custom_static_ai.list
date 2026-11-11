@@ -44,8 +44,10 @@ DOMAIN-SUFFIX,antigravity-unleash.goog
 DOMAIN-KEYWORD,antigravity
 
 # > Microsoft Copilot 核心精准分流 (防子域名漏网直连)
+DOMAIN-KEYWORD,copilot
 DOMAIN-SUFFIX,copilot.microsoft.com
 DOMAIN-SUFFIX,copilot.cloud.microsoft
+DOMAIN-SUFFIX,m365copilotapp.svc.cloud.microsoft
 DOMAIN-SUFFIX,edgeservices.bing.com
 DOMAIN-SUFFIX,sydney.bing.com
 DOMAIN-SUFFIX,bingapis.com
