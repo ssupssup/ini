@@ -1,4 +1,4 @@
-# 自动更新时间: 2026-11-11 13:00:22
+# 自动更新时间: 2026-11-11 13:13:20
 
 # === User Custom AI Rules ===
 # > Chrome 问问 Gemini / Google AI 组件强代理补全
@@ -48,8 +48,11 @@ DOMAIN-SUFFIX,sydney.bing.com
 DOMAIN-SUFFIX,bingapis.com
 DOMAIN,gateway.bingviz.microsoft.net
 DOMAIN,gateway.bingviz.microsoftapp.net
-DOMAIN,edge.microsoft.com
-DOMAIN,substrate.office.com
+DOMAIN-SUFFIX,edge.microsoft.com
+DOMAIN-SUFFIX,substrate.office.com
+DOMAIN-SUFFIX,trouter.skype.com
+DOMAIN,res.public.onecdn.static.microsoft
+DOMAIN,login.microsoftonline.com
 
 # ------------------ OpenAI ------------------
 DOMAIN,browser-intake-datadoghq.com
