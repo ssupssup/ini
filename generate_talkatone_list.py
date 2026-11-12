@@ -94,28 +94,28 @@ def generate_proxy_list(script_dir):
     user_seen = set()
     
     proxy_static_path = os.path.join(script_dir, "custom_static_talkatone_proxy.list")
-    if os.path.exists(proxy_static_path):
-        print(f"Reading local static proxy rules: {proxy_static_path}")
-        with open(proxy_static_path, "r", encoding="utf-8") as f:
-            user_content = f.read()
+    if not os.path.exists(proxy_static_path):
+        raise FileNotFoundError(f"CRITICAL: 必选静态代理规则丢失: {proxy_static_path}，已强制熔断！")
+    
+    print(f"Reading local static proxy rules: {proxy_static_path}")
+    with open(proxy_static_path, "r", encoding="utf-8") as f:
+        user_content = f.read()
+        
+    for line in user_content.splitlines():
+        line_stripped = line.strip()
+        if not line_stripped or line_stripped.startswith("#"):
+            continue
             
-        for line in user_content.splitlines():
-            line_stripped = line.strip()
-            if not line_stripped or line_stripped.startswith("#"):
-                continue
-                
-            match = re.match(r'^(DOMAIN|DOMAIN-SUFFIX|DOMAIN-KEYWORD|IP-CIDR|IP-CIDR6),([^,\s]+)', line_stripped, re.IGNORECASE)
-            if match:
-                rule_type = match.group(1).upper()
-                value = match.group(2).lower()
-                key = f"{rule_type},{value}"
-                
-                if key not in community_seen_keys:
-                    if key not in user_seen:
-                        user_seen.add(key)
-                        user_rules_to_add.append(key)
-    else:
-        print(f"Warning: {proxy_static_path} not found!")
+        match = re.match(r'^(DOMAIN|DOMAIN-SUFFIX|DOMAIN-KEYWORD|IP-CIDR|IP-CIDR6),([^,\s]+)', line_stripped, re.IGNORECASE)
+        if match:
+            rule_type = match.group(1).upper()
+            value = match.group(2).lower()
+            key = f"{rule_type},{value}"
+            
+            if key not in community_seen_keys:
+                if key not in user_seen:
+                    user_seen.add(key)
+                    user_rules_to_add.append(key)
 
     list_rules = []
     list_rules.append("# === 1. User Customized & Remapped Rules ===")
@@ -171,34 +171,34 @@ def generate_adblock_list(script_dir):
         print(f" - Parsed and added {added_count} adblock rules from community source.")
 
     adblock_static_path = os.path.join(script_dir, "custom_static_talkatone_adblock.list")
-    if os.path.exists(adblock_static_path):
-        print(f"Reading local static adblock rules: {adblock_static_path}")
-        with open(adblock_static_path, "r", encoding="utf-8") as f:
-            adblock_content = f.read()
+    if not os.path.exists(adblock_static_path):
+        raise FileNotFoundError(f"CRITICAL: 必选静态去广告规则丢失: {adblock_static_path}，已强制熔断！")
+        
+    print(f"Reading local static adblock rules: {adblock_static_path}")
+    with open(adblock_static_path, "r", encoding="utf-8") as f:
+        adblock_content = f.read()
+        
+    added_count = 0
+    for line in adblock_content.splitlines():
+        line_stripped = line.strip()
+        if not line_stripped or line_stripped.startswith("#"):
+            continue
             
-        added_count = 0
-        for line in adblock_content.splitlines():
-            line_stripped = line.strip()
-            if not line_stripped or line_stripped.startswith("#"):
-                continue
-                
-            match = re.match(r'^(DOMAIN|DOMAIN-SUFFIX|DOMAIN-KEYWORD|IP-CIDR|IP-CIDR6),([^,\s]+)', line_stripped, re.IGNORECASE)
-            if match:
-                rule_type = match.group(1).upper()
-                value = match.group(2).lower()
-                
-                if rule_type in ("DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD"):
-                    if is_whitelisted(value):
-                        continue
-                        
-                norm = f"{rule_type},{value}"
-                if norm not in seen:
-                    seen.add(norm)
-                    adblock_rules.append(norm)
-                    added_count += 1
-        print(f" - Parsed and added {added_count} custom static adblock rules.")
-    else:
-        print(f"Warning: {adblock_static_path} not found!")
+        match = re.match(r'^(DOMAIN|DOMAIN-SUFFIX|DOMAIN-KEYWORD|IP-CIDR|IP-CIDR6),([^,\s]+)', line_stripped, re.IGNORECASE)
+        if match:
+            rule_type = match.group(1).upper()
+            value = match.group(2).lower()
+            
+            if rule_type in ("DOMAIN", "DOMAIN-SUFFIX", "DOMAIN-KEYWORD"):
+                if is_whitelisted(value):
+                    continue
+                    
+            norm = f"{rule_type},{value}"
+            if norm not in seen:
+                seen.add(norm)
+                adblock_rules.append(norm)
+                added_count += 1
+    print(f" - Parsed and added {added_count} custom static adblock rules.")
 
     for alliance, url in AD_SOURCES.items():
         content = download_url(url)

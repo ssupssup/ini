@@ -82,11 +82,13 @@ def main():
             seen = set()
             
             custom_static_path = os.path.join(BASE_DIR, "custom_static_telegram_proxy.list")
-            if os.path.exists(custom_static_path):
-                print(f"Reading static Telegram custom rules: {custom_static_path}")
-                with open(custom_static_path, "r", encoding="utf-8") as f:
-                    static_content = f.read()
-                for line in static_content.splitlines():
+            if not os.path.exists(custom_static_path):
+                raise FileNotFoundError(f"CRITICAL: 必选静态 Telegram 规则丢失: {custom_static_path}，已强制熔断！")
+                
+            print(f"Reading static Telegram custom rules: {custom_static_path}")
+            with open(custom_static_path, "r", encoding="utf-8") as f:
+                static_content = f.read()
+            for line in static_content.splitlines():
                     line_stripped = line.strip()
                     if line_stripped and not line_stripped.startswith("#"):
                         norm = line_stripped.replace(" ", "").lower()

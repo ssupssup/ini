@@ -121,23 +121,23 @@ def main():
                 suffix_set.add(val)
     
     custom_rules_path = os.path.join(BASE_DIR, "custom_static_ai.list")
-    if os.path.exists(custom_rules_path):
-        print(f"Reading local static custom rules: {custom_rules_path}")
-        with open(custom_rules_path, "r", encoding="utf-8") as f:
-            custom_content = f.read()
-        for line in custom_content.splitlines():
-            line_stripped = line.strip()
-            if line_stripped:
-                if not line_stripped.startswith("#"):
-                    norm = line_stripped.replace(" ", "").lower()
-                    if norm not in seen and not is_covered(line_stripped):
-                        seen.add(norm)
-                        register_rule(line_stripped)
-                        final_rules.append(line_stripped)
-                else:
+    if not os.path.exists(custom_rules_path):
+        raise FileNotFoundError(f"CRITICAL: 必选静态 AI 规则丢失: {custom_rules_path}，已强制熔断！")
+        
+    print(f"Reading local static custom rules: {custom_rules_path}")
+    with open(custom_rules_path, "r", encoding="utf-8") as f:
+        custom_content = f.read()
+    for line in custom_content.splitlines():
+        line_stripped = line.strip()
+        if line_stripped:
+            if not line_stripped.startswith("#"):
+                norm = line_stripped.replace(" ", "").lower()
+                if norm not in seen and not is_covered(line_stripped):
+                    seen.add(norm)
+                    register_rule(line_stripped)
                     final_rules.append(line_stripped)
-    else:
-        print(f"Warning: {custom_rules_path} not found!")
+            else:
+                final_rules.append(line_stripped)
                 
     for service, rules in compiled_by_service.items():
         service_rules = []
