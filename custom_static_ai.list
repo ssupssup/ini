@@ -3,7 +3,7 @@
 # > Chrome 问问 Gemini / Google AI 组件强代理补全
 DOMAIN,clients6.google.com
 DOMAIN-SUFFIX,clients6.google.com
-DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,optimizationguide-pa.googleapis.com
 DOMAIN-SUFFIX,gemini.google
 DOMAIN-KEYWORD,generativelanguage
 
