@@ -15,7 +15,8 @@ AI_SOURCES = {
     "Claude": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Claude/Claude.yaml",
     "Gemini_List": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Gemini/Gemini.list",
     "Gemini_Yaml": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gemini/Gemini.yaml",
-    "Copilot": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.yaml"
+    "Copilot": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.yaml",
+    "MetaCubeX_AI": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/classical/category-ai-!cn.list"
 }
 
 POLLUTION_DOMAINS = [
@@ -46,6 +47,8 @@ def download_url(url):
 
 def is_polluted(domain):
     domain_lower = domain.lower().strip('.')
+    if domain_lower == "googleapis.com":
+        return True
     for allowed in ALLOWED_SUBDOMAINS:
         if domain_lower == allowed or domain_lower.endswith('.' + allowed):
             return False
